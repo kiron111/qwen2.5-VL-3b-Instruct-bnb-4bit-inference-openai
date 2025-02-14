@@ -27,7 +27,7 @@ An OpenAI-compatible API server for the Qwen2.5-VL vision-language model, enabli
 1. Clone the repository:
 ```bash
 git clone https://github.com/kiron111/qwen2.5-VL-3b-Instruct-bnb-4bit-inference-openai.git
-cd qwen-vision
+cd qwen2.5-VL-3b-Instruct-bnb-4bit-inference-openai
 ```
 
 2. Download the model:
