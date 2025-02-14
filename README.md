@@ -26,7 +26,7 @@ An OpenAI-compatible API server for the Qwen2.5-VL vision-language model, enabli
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/phildougherty/qwen2.5-VL-inference-openai.git
+git clone https://github.com/kiron111/qwen2.5-VL-3b-Instruct-bnb-4bit-inference-openai.git
 cd qwen-vision
 ```
 
@@ -63,7 +63,7 @@ Example with text:
 curl -X POST http://localhost:9192/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "Qwen2.5-VL-7B-Instruct",
+    "model": "Qwen2.5-VL-3B-Instruct-bnb-4bit",
     "messages": [
       {
         "role": "user",
@@ -78,7 +78,7 @@ Example with image:
 curl -X POST http://localhost:9192/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "Qwen2.5-VL-7B-Instruct",
+    "model": "Qwen2.5-VL-3B-Instruct-bnb-4bit",
     "messages": [
       {
         "role": "user",
@@ -118,7 +118,7 @@ Environment variables in docker-compose.yml:
 1. In OpenWebUI admin panel, add a new API endpoint:
    - Base URL: `http://localhost:9192`
    - API Key: (leave blank)
-   - Model: `Qwen2.5-VL-7B-Instruct`
+   - Model: `Qwen2.5-VL-3B-Instruct-bnb-4bit`
 
 2. The model will appear in the model selection dropdown with vision capabilities enabled.
 
